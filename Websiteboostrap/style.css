@@ -1,0 +1,195 @@
+body{
+	
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.bgimg {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/joel-vodell-TApAkERW5pQ-unsplash.jpg);
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	width: 100%;
+	height: 660px;
+  }
+
+  ul li a{
+	  letter-spacing: 1px;
+  }
+  ul li a:hover{
+	  color: rgb(0, 227, 243) !important;
+  }
+
+  .myMain {
+	padding-top: 200px;
+	box-sizing: border-box;
+  }
+
+  .myMain h1 {
+	font-size: 70px;
+	padding: 20px 0 25px 0;
+  }
+
+  .myMain h2 {
+	font-size: 35px;
+  }
+
+  .mycartsection {
+	padding: 50px 0 40px 0;
+	height: 700px;
+  }
+
+  .rowset {
+	margin: 80px 0;
+  }
+
+  .cartimg1 {
+	display: block;
+	margin: auto;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+
+  }
+
+  .cimg {
+	margin-top: 25px;
+	color: white;
+  }
+
+  .rowset p {
+	color: rgb(129, 129, 129);
+  }
+
+  .portfolio {
+	width: 100%;
+	height: 1100px;
+	padding: 80px 0 60px;
+  }
+
+  .setportfolio {
+	padding-top: 40px;
+  }
+
+  .card {
+	margin-top: 20px;
+  }
+
+  .card-img {
+	height: 250px;
+
+  }
+
+  .ourteam {
+	width: 100%;
+	height: 700px;
+	padding: 80px 0 60px;
+  }
+
+  .teamrow {
+	padding-top: 60px;
+  }
+
+  .ourteamh1 {
+	margin-bottom: 20px;
+  }
+
+  .footer {
+	height: 100px;
+  }
+
+  .footer h5 {
+	line-height: 100px;
+  }
+
+  /* ========= Responsiveness =============== */
+
+  @media(min-width:992px) {
+
+  }
+
+  @media(min-width:768px) and (max-width:991px) {
+	.myMain h1 {
+	  font-size: 60px;
+	}
+
+	.myMain h2 {
+	  font-size: 30px;
+
+	}
+  
+  }
+
+  @media(min-width:575px) and (max-width:767px) {
+	
+
+	.myMain h1 {
+	  font-size: 60px;
+	}
+
+	.myMain h2 {
+	  font-size: 30px;
+
+	}
+	.portfolio {
+	  height: 2650px;
+	}
+
+	.ourteam {
+	  height: 1600px;
+	}
+  }
+
+  @media(min-width:480px) and (max-width:574px) {
+
+	.myMain h1 {
+	  font-size: 50px;
+	}
+
+	.myMain h2 {
+	  font-size: 25px;
+
+	}
+
+	.mycartsection {
+	  padding: 50px 0 40px 0;
+	  height: 1080px;
+	}
+
+	.portfolio {
+	  height: 2650px;
+	}
+
+	.ourteam {
+	  height: 1600px;
+	}
+  }
+
+  @media(max-width:479px) {
+	
+	.myMain h1 {
+	  font-size: 40px;
+	}
+
+	.myMain h2 {
+	  font-size: 20px;
+
+	}
+
+	.mycartsection {
+	  padding: 50px 0 40px 0;
+	  height: 1100px;
+	}
+
+	.portfolio {
+	  height: 2650px;
+	}
+
+	.ourteam {
+	  height: 1600px;
+	}
+
+	.foot{
+		font-size:18px ;
+	}
+
+}

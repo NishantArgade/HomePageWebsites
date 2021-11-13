@@ -1,0 +1,615 @@
+html{
+	scroll-behavior: smooth;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Bree Serif', serif;
+}
+/* body{
+	overflow-x: hidden;
+} */
+li{list-style:none;}
+li:hover{list-style: none;}
+a{text-decoration: none;}
+a:hover{text-decoration: none;}
+
+p{
+	font-size: 0.9rem;
+	line-height: 1.6;
+	font-weight: 400;
+	color:#606060;
+}
+.service-div h2,.progressbar h2,.header-three-block .block h2{
+	font-size: 1.2rem;
+	line-height: 1.1;
+	font-weight: bold;
+	margin: 30px 0 15px 0;
+	word-spacing: 4px;
+}
+
+/* =========== Actual css start ===================================== */
+
+/* ----------Header--------------------- */
+.header{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(17, 237, 245, 0.38),rgba(20, 236, 225, 0.319)), url(./images/pexels-fauxels-3184450.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: relative;
+	clip-path:polygon(0% 0%,100% 0%, 100% 75%,50% 100%,0% 75%);
+}
+.header::before{
+	content: "";
+	background: linear-gradient(to right,#1e5799 0%,#3ccdbb 0%,#16c9f6 100%) ; 
+	position: absolute;
+	/*width & height only consider content width & height But top,down,left,right positons cosider (margin,border,content,padding) width and height
+	width: 100%; 
+	height: 100%; */
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0.3; 
+	z-index: -1;
+
+}
+/* ----------Navbar------------------ */
+
+.navbar::before{
+	content: "";
+	background: linear-gradient(to right,#1e5799 0%,#3ccdbb 0%,#16c9f6 100%) ; 
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0.3; 
+	z-index: -1;    
+}
+.navbar ul li a{	
+	font-size: 1.2rem;
+}
+.navbar-brand{
+	font-size: 1.5rem;
+}
+
+i{
+	color:#2fccd0;
+}
+
+/* -------Header cetral content------------------ */
+/* height inhiritance for lg md device set maximum height  */
+.header-section{
+	width: 100%;
+	height: inherit; 
+	text-align: center;
+	color: white;
+	position: relative;
+}
+
+.center-div{
+	width: 100%;
+	height: auto;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+ -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+}
+.center-div h1{
+	font-size: 4rem;
+}
+.center-div p{
+	font-size: 1.5rem;
+	padding: 15px 5px;
+	margin: 20px 0;
+	color: #fff;
+}
+.center-div .button a{
+	text-decoration: none;
+	color: white;
+	border: 2px solid white;
+	border-radius: 17px;
+	/* padding: 5px 20px ; */
+	margin: 5px 10px;
+	/* font-size: 1.5rem; */
+
+	padding: 0.4rem 1.1rem;
+	font-size: 1.1rem;
+}
+.center-div .button a:hover{
+	color:#16c9f6;
+	background-color: white;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* ----------header-below-three Block------------------- */
+
+.header-three-block {
+	padding: 20px 0 10px 0;
+	width: 100%;
+	height: auto;
+	margin:50px 0;
+}
+.header-three-block h2{
+	font-size: 4.5rem;
+}
+.header-three-block .block{
+	padding: 50px ;
+transition: 0.4s;
+
+}
+.header-three-block .block:hover{
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	border-radius: 6px;
+transform: translateY(-20px);
+  
+}
+/* -------- Offerse ------------------- */
+.Offersection{
+	background-color: rgba(211, 211, 211, 0.157);
+}
+.progressbar h6{
+	font-size: 20px;
+
+}
+.progress{
+	height: 0.6rem !important;
+	margin-bottom: 25px !important;
+
+	background-color: #60606057;
+}
+.service-icon{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/* -------- Work Done ---------------------------------------- */
+.workdone{
+	margin:100px 0;
+	width: 100%;height: auto;
+}
+.workdone-content h1{
+		font-size:2rem ;
+		text-align: center;
+	}
+.workdone-content p{
+padding-top: 25px;
+
+}
+.workdone-heading{
+	padding-bottom: 45px;
+}
+.workdone-heading h1{
+	padding-bottom: 15px;
+}
+/* ------------ Pricing Section --------------------------- */
+.pricing-sec{
+	width: 100%;
+	height: 100vh;
+	padding:50px;
+	position: relative;
+}
+.pricing-sec::before{
+	content: "";
+	background: linear-gradient(165deg,#16c9f6 55%,#fff 0%) ; 
+	position: absolute;
+	 top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0; 	
+	z-index: -1;
+
+}
+.pricing-heading{
+      padding:60px 0;
+}
+.money{
+	font-size: 40px;
+	line-height: 1.1;
+	color: rgba(0, 0, 0, 0.801);
+}
+.card{
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	border-radius: 6px;
+	transition: 0.4s ease;
+}
+.card-2{
+	transform: translateY(-20px);
+	
+}
+.card:hover{
+	transform: translateY(-25px);
+	
+}
+.card-2:hover{
+	transform: translateY(-34px);
+	
+}
+.card-header{
+    font-size: 2rem;
+	font-weight: 400;
+	padding: 20px 0;
+}
+.card:hover .card-header,.card:hover .money{
+	color:#0dfaab;
+}
+.card:hover .card-footer a{
+	color: white;
+	background-color:#0dfaab;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.card-body{
+	font-size: 18px;
+	font-weight: 400;
+	padding: 30px 0;
+	line-height: 2.1;
+
+}
+.card-footer{
+	font-size: 22px;
+	font-weight: 400;
+	padding: 30px 0;
+	background-color: white;
+
+}
+.card-footer  a{
+	text-decoration: none;
+	color:#16c9f6;
+	border: 2px solid rgba(0, 0, 0, 0.24);
+	border-radius: 17px;
+	padding: 5px 20px ;
+	margin: 5px 10px;
+}
+
+/* ---------- Our Happy Customer (Corosul section) -------------------------- */
+
+.happycustomer {
+	width: 100%;
+	height: 100vh;
+	margin: 100px 0;
+}
+.happycustomer h1{
+line-height: 1.9;
+}
+.happycustomer p{
+	padding-bottom: 30px;
+}
+.box{
+	text-align: center;
+	border: 2px solid rgba(0, 0, 0, 0.29);
+	border-radius: 5px;
+	box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.24);
+padding: 20px;
+transition: 0.4s ease;
+
+}
+.box a img{
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	margin: 23px 0;
+}
+.box:hover{
+	background-color: #16c9f6;
+}
+.box:hover p{
+	color: white;
+}
+.box:hover h2{
+	color: white;
+}
+.carousel-indicators{
+bottom:-53px;
+}
+.carousel-indicators li{
+	background-color: #16c9f6;
+}
+/* -------------- Contact form ---------------------------- */
+.contactform{
+	width:100%;
+	height: 100vh;
+	margin:50px 0;
+	position: relative;
+}
+.contactheading {
+	padding-bottom: 28px;
+}
+.contactheading h1{
+	line-height: 1.9;
+}
+textarea{
+	width: 100%;
+}
+
+/* ****Placeholder select like this****** */
+::placeholder{
+	font-size: 0.85rem;
+	color: #6060604d;
+}
+
+.contactform::before{
+	content: "";
+	background: linear-gradient(-29deg,#16c9f6 55%,#fff 0%) ; 
+	position: absolute;
+	 top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0; 	
+	z-index: -1;
+}
+.form-btn button{
+	padding: 5px 25px;
+	margin: 20px 0;
+	background:transparent;
+	color: transparent;
+	border: 2px solid transparent;
+	border-radius: 30px;
+	/* width: 100px; */
+	font-size: 1.2rem;
+	font-weight: 700;
+	list-style: 1.1;
+}
+form:hover .form-btn button{
+	color: #0dfaab;
+	background-color: white;
+	box-shadow: 2px 8px 10px 0 rgba(0, 0, 0, 0.24);
+
+}
+button:hover button{
+	color: white;
+	background-color: #0dfaab;
+}
+
+/* ----------- NewsLetter ------------------------------------------- */
+
+.newsletter{
+	width: 100%;
+	height: auto;
+	margin: 80px 0;
+}
+.input-form .form-control{
+	border-radius: 25px 0 0 25px;
+	min-width: 150px;
+	min-height: 45px;
+	
+}
+.input-form .input-group-text{
+	border-radius:  0 25px 25px 0;
+	min-width: 120px;
+	min-height: 40px;
+    color: #fff;	
+	background-color: #16c9f6;
+	font-size: 1.2rem;
+	font-weight: 400;
+	list-style: 1.1;
+}
+.newsletter-heading{
+margin-bottom: 40px;
+}
+/* ----------- Footer --------------------------------------------------------------------- */
+ 
+.footer{
+	width: 100%;
+	height:auto;
+	padding:70px 0 30px 0 ;
+	background-color: #00abff;
+}
+.footer h3{
+	font-size: 1.5rem;
+	line-height: 1.6;
+	font-weight: 500;
+    color: #fff;
+	text-shadow: 0 3px 5px rgba(0, 0, 0, 0.589);
+}
+.footer p{
+	color: #fff;
+}
+.footer li a{
+	color: white;
+}
+.copyright{
+	margin-top: 50px;
+}
+.foot2{
+	text-align: center !important;
+}
+/* -------- Scroll icon --------------------------------- */
+
+ #arrowUp{
+	color: #fff;
+	padding: 10px;
+	border-radius: 10px;
+	bottom: 20px;
+	right: 40px;
+	position: fixed;
+	background-color: #207fec;
+	display: none;
+}
+ #arrowUp:hover{
+   background-color: rgb(226, 8, 8);
+}
+
+/* ========*********** Responsivness ************========================================================== */
+
+/* 991 to above--------------for this above code. */
+
+@media(min-width:767px) and (max-width:991px) {
+ 
+	.navbar-brand{
+		font-size: 1.4rem;
+	}
+	.navbar ul li a{	
+		font-size: 1.2rem;
+	}
+	.header-section{
+		height: auto; 
+		top:50%;
+	}	
+	.center-div h1 {
+		font-size: 4rem;
+	}
+	.center-div p {
+		font-size: 1.4rem;
+		margin:1rem 0;
+    }
+	.center-div .button a{
+		padding: 0.4rem 1.1rem;
+		font-size: 1.1rem;
+    }
+	.pricing-sec,.happycustomer{
+		height: auto;
+		margin: 50px 0;
+	}
+	.Offersection{
+		padding-bottom: 30px;
+	}
+	.foot2{
+		text-align: left !important;
+	}
+	.header{
+		overflow-x: hidden;
+	}
+	.center-div .button a{
+		padding: 0.4rem 1.1rem;
+		font-size: 1.1rem;
+    }
+}
+
+@media(min-width:574px) and (max-width:767px) {
+
+	.navbar-brand{
+		font-size: 1.4rem;
+	}
+	.navbar ul li a{
+	
+		font-size: 1.2rem;
+	}
+	.header-section{
+		height: auto; 
+		top:25%;
+	}
+	.center-div{
+		width: 100%;
+		height: auto;
+		position: absolute;
+		top: -13px;
+		left: 50%;
+		transform: translate(-50%,-22%);
+	}	
+	.center-div h1 {
+		font-size: 3.3rem;
+	}
+	.center-div p {
+		font-size:1.4rem;	
+			margin:1rem 0;	
+	}
+	.center-div .button a{
+		padding: 0.4rem 1.1rem;
+		font-size: 1.1rem;
+    }
+	.pricing-sec,.happycustomer{
+		height: auto;
+		margin: 50px 0;
+	}
+	.card-2{
+		transform: translateY(0px);
+		margin: 30px 0;
+	}
+	.card:hover{
+		transform: translateY(0);
+	}
+	.foot2{
+		text-align: left !important;
+	}
+	.header{
+		overflow-x: hidden;
+	}
+}
+
+@media(min-width:479px) and (max-width:574px) {
+	.header{
+		overflow-x: hidden;
+	}
+	.navbar-brand{
+		font-size: 1.4rem;
+	}
+	.navbar ul li a{
+		font-size: 1.2rem;
+	}
+	.header-section{
+		height: auto; 
+		top:40%;
+	}
+	.center-div h1 {
+		font-size: 2rem;
+	}
+	.center-div p {
+		font-size: 0.9rem;
+	margin: 0.2rem 0;}
+
+	.center-div .button a{ 
+		padding: 0.4rem 1.1rem;
+		font-size: 1.1rem;
+	}
+	.pricing-sec,.happycustomer{
+		height: auto;
+		margin: 50px 0;
+	}
+	.card-2{
+		transform: translateY(0px);
+		margin: 30px 0;
+	}
+	.card:hover{
+		transform: translateY(0);
+	}
+	.foot2{
+		text-align: left !important;
+	}
+	
+}
+
+@media(max-width:479px) {
+	
+	.header{
+		overflow-x: hidden;
+	}
+	.navbar-brand{
+		font-size: 1.2rem;
+	}
+	.navbar ul li a{
+	    font-size: 1rem;
+	}
+	.header-section{
+		height: auto; 
+		top:28%;
+	}
+	.center-div h1 {
+		font-size: 2rem;
+	}
+	.center-div p {
+		font-size: 1rem;
+	    margin: 0.2rem 0;
+	}
+    .center-div .button a{ 
+    	padding: 0.4rem 1.1rem;
+		font-size: 1.0rem;
+	}		
+	.pricing-sec,.happycustomer{
+		height: auto;
+		margin: 50px 0;
+	}
+	.card-2{
+		transform: translateY(0px);
+		margin: 30px 0;
+	}
+	.card:hover{
+		transform: translateY(0);
+	}
+	.foot2{
+		text-align: left !important;
+	}
+}
+

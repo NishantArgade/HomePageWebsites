@@ -1,0 +1,181 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.site-header{
+	width: 100%;
+	height: 100vh;
+	background:linear-gradient(57deg,#00c6a7,#1e4d92);
+
+	/* Note Here: clip path is use for cut background in stylish shap+ */
+	clip-path: polygon(0% 0%,100% 0%,100% 80%,0% 100%);
+}
+nav{
+	display: flex;
+	width: 100%;
+	height: 100px;
+	/* background-color: yellow;	 */
+}
+nav .logo{
+	/* background-color: green; */
+	width: 50%;
+	height: 100px;
+	 color: white;
+
+}
+nav h1{
+	line-height: 100px;
+	padding-left: 50px;
+	font-size: 20px;
+}
+nav .menu {
+/* background-color: pink; */
+width: 50%;
+height: 100%;
+
+}
+.menu ul{
+	width: 100%;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+list-style: none;
+}
+ul li a{
+	
+	text-decoration: none;
+	color: white;
+	font-size: 19px;
+	font-weight: 700;
+	/* letter-spacing: 2px; */
+}
+section{
+	display: flex;
+}
+.leftside{
+	width: 45%;height: auto;
+	overflow: hidden;
+}
+.leftside img{
+	width: 100%;
+	height: auto;
+}
+.rightside{
+	/* background-color: #00c6a7; */
+	color: white  ;
+	width: 55%;
+	height: 300px;
+	text-align: center;
+	margin-top: 80px;
+	padding: 40px;
+}
+.rightside h1{
+	font-size: 50px;
+	font-weight: 900;
+
+}
+.rightside p{
+	padding: 30px 0;
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+.rightside button{
+	text-transform: uppercase;
+	background:linear-gradient(57deg,#00c6a7,#1e4d92) ;
+	padding: 10px 25px;
+	margin: 10px;
+	/* width: 120px; */
+	color: white;
+	font-size: 18px;
+	font-weight: 400;
+	border-radius: 5px;
+	border-color: white;
+}
+
+button:hover{
+	background:linear-gradient(57deg,#1e4d92,#00c6a7) ;
+
+}
+/* ------------- Responsivness --------------------------------------- */
+
+/* Typical Device Breakpoints */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	nav{
+		display: flex;
+		width: 100%;
+		height: 50px;
+		/* background-color: yellow;	 */
+	}
+	nav .logo{
+		/* background-color: green; */
+		width: 18%;
+		/* height: 50px; */
+		height: auto;
+		 color: white;
+	}
+	nav h1 {
+		line-height: 50px;
+		padding-left: 50px;
+		font-size: 10px;
+	}
+	nav .menu {
+		/* background-color: pink; */
+		width: 50%;
+		height: 50%;
+		
+		}
+		.menu ul{
+			width: 74%;
+			height: 50px;
+			display: flex;
+			align-items: center;
+			justify-content:space-around;
+		list-style: none;
+		}
+		ul li a{
+			
+			text-decoration: none;
+			color: white;
+			font-size: 10px;
+			font-weight: 700;
+			/* letter-spacing: 2px; */
+		}
+		.rightside h1 {
+			font-size: 14px;
+			font-weight: 900;
+		}
+
+		.rightside p {
+			padding: 14px 0;
+			font-size: 13px;
+			letter-spacing: 1px;
+		}
+		.rightside button {
+			font-size: 8px;
+		}
+		.leftside {
+			width: 34%;}
+			.rightside {
+				width: 35%;}
+			nav h1{
+				padding-left: 16px;
+			}	
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
